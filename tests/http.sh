@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+IFS=$'\n\t'
+
 source "../lib/http.bash"
 
 do_http_get "https://www.google.com"
